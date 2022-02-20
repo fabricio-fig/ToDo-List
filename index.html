@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
@@ -12,14 +11,22 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="todo-header">Lista de Tarefas</h1>
-        <input type="text" id="addToDo" placeholder="Adicione ua tarefa aqui..">
-        <ul>
-            <li>Item 1</li>
+        <h1 class="todo-header">LISTA DE TAREFAS</h1>
+        <input class="form-control mb-2" id="addToDo" type="text" placeholder="Adicione uma tarefa aqui.." />
+        <ul class="list-group">
+            <li class="list-group-item">
+                <span><i class="fa fa-trash"></i></span> Estudar Javascript
+            </li>
+            <li class="list-group-item">
+                <span><i class="fa fa-trash"></i></span> Estudar JQuery
+            </li>
+            <li class="list-group-item">
+                <span><i class="fa fa-trash"></i></span> Estudar CSS
+            </li>
         </ul>
     </div>
     
-    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
