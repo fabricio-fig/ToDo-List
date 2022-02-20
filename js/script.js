@@ -22,14 +22,14 @@ function removeFeature() {
 
     removeBtns.toArray().forEach((btn) => { 
         $(btn).click( () => { 
-            $(btn).parent().parent().remove();
+            $(btn).parent().parent().parent().remove();
         } ) 
     });
 
 }
 
 function createTodoItem(text){
-    newElements = `<li class="list-group-item"><span><i class="fa fa-trash"></i></span> ${text}</li>`;
+    newElements = `<li class="list-group-item"><button class="btn"><i class="fa fa-trash"></i></button></span> ${text}</li>`;
     $('ul').append($(newElements));
     removeFeature();
 }
