@@ -1,4 +1,5 @@
 .container li:nth-child(even){background-color: #f2f2f2;}
 
 .container li:hover {background-color: #ddd;}
-.container button:hover{background-color: #EF6D6D;}
+.container i:hover{background-color: #EF6D6D;}
+.container i{padding: 5px;}
